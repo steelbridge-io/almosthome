@@ -1,0 +1,283 @@
+/*
+	StyleSheet For Responsive Bootstrap Carousel
+	Author: szthemes
+	Item Name: Responsive Bootstrap Carousel
+	Author URI: http://codecanyon.net/user/szthemes
+	Description: Different Types of Bootstrap Carousel
+
+									Content List
+  -----------------------------------------------------------------------------------
+	NAME ----------------------------------------LINE NUMBER--------------------- #
+	THUMBNAIL IMAGE CAROUSEL --------------------32------------------------------ 01
+	RESPONSIVE ----------------------------------176----------------------------- 02	
+	COLORS --------------------------------------238----------------------------- 03	
+	[ Note: Line Numbers Are According To Notepad++ ]
+  -----------------------------------------------------------------------------------
+							Fonts Styles
+  -----------------------------------------------------------------------------------
+	  'Raleway', sans-serif ---------------------------------- 01
+	            FontAwesome ---------------------------------- 02
+  -----------------------------------------------------------------------------------
+							Color Codes
+  -----------------------------------------------------------------------------------
+	NAME    ------------------------RGB-------------------------- #
+	#ffffff -------------------rgb(255, 255, 255)---------------- 01
+	#000000 -------------------rgb(0, 0, 0)---------------------- 02
+	#d63922 -------------------rgb(26, 188, 156)----------------- 03	Replace Only This Color To Change Whole Color Scheme
+	#474747 -------------------rgb(71, 71, 71)------------------- 04
+	#282828 -------------------rgb(40, 40, 40)------------------- 05
+*/
+
+/*------------------------------------------------------*/
+/* THUMBNAIL IMAGE CAROUSEL
+/*------------------------------------------------------*/
+
+.thumbnail_image_carousel_wrapper {
+  overflow: hidden;
+  max-height: 645px;
+  position: relative;
+}
+.thumbnail_image_carousel_wrapper > .carousel-inner > .item > img,
+.thumbnail_image_carousel_wrapper > .carousel-inner > .item > a > img {
+  opacity: 1;
+  margin: auto;
+  width: 100% !important;
+}
+/*---------- FADE EFFECT ----------*/
+.thumbnail_image_carousel_fade {
+  opacity: 1;
+}
+.thumbnail_image_carousel_fade .item {
+  top: 0;
+  z-index: 1;
+  opacity: 0;
+  width: 100%;
+  position: absolute;
+  left: 0 !important;
+  display: block !important;
+  -webkit-transition: opacity ease-in-out 0.7s;
+  -moz-transition: opacity ease-in-out 0.7s;
+  -ms-transition: opacity ease-in-out 0.7s;	
+  -o-transition: opacity ease-in-out 0.7s;  
+  transition: opacity ease-in-out 0.7s;
+}
+.thumbnail_image_carousel_fade .item:first-child {
+  top: auto;
+  position: relative;
+}
+.thumbnail_image_carousel_fade .item.active {
+  opacity: 1;
+  z-index: 2;
+  -webkit-transition: opacity ease-in-out 0.7s;
+  -moz-transition: opacity ease-in-out 0.7s;	
+  -ms-transition: opacity ease-in-out 0.7s;	
+  -o-transition: opacity ease-in-out 0.7s;  
+  transition: opacity ease-in-out 0.7s;
+}
+/*---------- LEFT/RIGHT CONTROL ----------*/
+.thumbnail_image_carousel_control_left,
+.thumbnail_image_carousel_control_right {
+  top: 40%;
+  opacity: 0;
+  z-index: 2;
+  width: 55px;
+  height: 55px;
+  text-shadow: none;
+  text-align: center;
+  -webkit-border-radius: 0%;
+  border-radius: 0%;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+}
+.thumbnail_image_carousel_wrapper:hover .thumbnail_image_carousel_control_left,
+.thumbnail_image_carousel_wrapper:hover .thumbnail_image_carousel_control_right {
+  opacity: 0.5;
+}
+.thumbnail_image_carousel_control_icons {
+  line-height: 50px;
+  font-size: 60px !important;
+  font-weight: normal !important;
+}
+.thumbnail_image_carousel_control_left {
+  left: 3% !important;
+}
+.thumbnail_image_carousel_control_right {
+  right: 5% !important;
+}
+.thumbnail_image_carousel_control_left:hover,
+.thumbnail_image_carousel_control_left:active,
+.thumbnail_image_carousel_control_left:focus,
+.thumbnail_image_carousel_control_right:hover,
+.thumbnail_image_carousel_control_right:active,
+.thumbnail_image_carousel_control_right:focus {
+  opacity: 1;
+}
+/*---------- INDICATORS THUMBNAIL IMAGES ----------*/
+.thumbnail_image_carousel_indicators {
+  left: 0%;
+  right: 0%;
+  z-index: 3;
+  bottom: 0%;
+  width: 100%;
+  margin-left: 0%;
+  position: absolute;
+  margin-bottom: 0px;
+  padding: 5px 0px 0px 0px;
+}
+.thumbnail_image_carousel_indicators li {
+  width: 7%;
+  opacity: 1;
+  margin: 0px;
+  height: auto;
+  border: none;
+  -webkit-border-radius: 0%;
+  border-radius: 0%;
+  -webkit-transition: opacity 0.3s ease-in-out 0s;
+  transition: opacity 0.3s ease-in-out 0s;
+}
+.thumbnail_image_carousel_indicators li img {
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+}
+.thumbnail_image_carousel_indicators .active {
+  width: 7%;
+  opacity: 0.5;
+  height: auto;
+  border: none;
+}
+/*---------- CAPTION ----------*/
+.thumbnail_image_carousel_caption {
+  left: 0%;
+  top: 50%;
+  right: 0%;
+  width: 100%;
+  text-align: left;
+  text-shadow: none;
+  padding: 10px 0px 0px 100px;
+  font-family: 'Raleway', sans-serif;
+}
+.thumbnail_image_carousel_caption h1 {
+  font-size: 25px;
+  margin: 0px 0px 5px 0px;
+  text-transform: uppercase;
+}
+.thumbnail_image_carousel_caption p {
+  margin-top: 15px;
+  text-align: left;
+  margin: 0px 0px 0px 0px;
+}
+.thumbnail_image_carousel_caption p a {
+  text-decoration: none;
+}
+
+/*------------------------------------------------------*/
+/* RESPONSIVE
+/*------------------------------------------------------*/
+
+/*---------- MEDIA 767px ----------*/
+@media only screen and (max-width: 767px) {
+  /*---------- LEFT/RIGHT CONTROL ----------*/
+  .thumbnail_image_carousel_control_left,
+  .thumbnail_image_carousel_control_right {
+    display: none;
+  }
+}
+/*---------- MEDIA 480px ----------*/
+@media only screen and (max-width: 480px) {
+  /*---------- CAPTION ----------*/
+  .thumbnail_image_carousel_caption {
+    top: 10%;
+    text-align: center;
+    padding: 10px 10px 0px 10px;
+  }
+  .thumbnail_image_carousel_caption h1 {
+    font-size: 22px;
+  }
+}
+
+/*---------- MEDIA 481px - 600px ----------*/
+@media (min-width: 481px) and (max-width: 600px) {
+  /*---------- CAPTION ----------*/
+  .thumbnail_image_carousel_caption {
+    top: 50%;
+    text-align: center;
+    padding: 10px 10px 0px 10px;
+  }
+}
+/*---------- MEDIA 601px - 767px ----------*/
+@media (min-width: 601px) and (max-width: 767px) {
+  /*---------- CAPTION ----------*/
+  .thumbnail_image_carousel_caption {
+    top: 65%;
+    text-align: center;
+    padding: 10px 10px 0px 10px;
+  }
+}
+/*---------- MEDIA 768px - 991px ----------*/
+@media (min-width: 768px) and (max-width: 991px) {
+  /*---------- CAPTION ----------*/
+  .thumbnail_image_carousel_caption {
+    top: 70%;
+    padding: 10px 10px 0px 10px;
+  }
+}
+/*---------- MEDIA 992px - 1250px ----------*/
+@media (min-width: 992px) and (max-width: 1250px) {
+  /*---------- CAPTION ----------*/
+  .thumbnail_image_carousel_caption {
+    top: 60%;
+  }
+  .thumbnail_image_carousel_caption {
+    padding: 10px 10px 0px 10px;
+  }
+}
+
+/*------------------------------------------------------*/
+/* COLORS (RED)
+/*------------------------------------------------------*/
+
+.thumbnail_image_carousel_wrapper {
+  background: #000000;
+}
+/*---------- LEFT/RIGHT CONTROL ----------*/
+.thumbnail_image_carousel_control_left,
+.thumbnail_image_carousel_control_right {
+  color: #262626;
+  background: transparent !important;
+}
+.thumbnail_image_carousel_control_left:hover,
+.thumbnail_image_carousel_control_left:active,
+.thumbnail_image_carousel_control_left:focus,
+.thumbnail_image_carousel_control_right:hover,
+.thumbnail_image_carousel_control_right:active,
+.thumbnail_image_carousel_control_right:focus {
+  color: #f5f5f5;
+  opacity: 0.5;
+}
+/*---------- INDICATORS THUMBNAIL IMAGES ----------*/
+.thumbnail_image_carousel_indicators {
+  background: #282828;
+  border-top: 1px solid #474747;
+}
+.thumbnail_image_carousel_indicators li {
+  border: 1px solid #474747;
+}
+.thumbnail_image_carousel_indicators .active {
+  border: 1px solid #474747;
+}
+/*---------- CAPTION ----------*/
+.thumbnail_image_carousel_caption {
+  background: #282828;
+}
+.thumbnail_image_carousel_caption p a {
+  color: #d63922;
+}
+@media (max-width: 600px) {
+  /*---------- CAPTION ----------*/
+  .thumbnail_image_carousel_caption {
+    background: rgba(40, 40, 40, 0.5 );
+  }
+}
+/*---------- END ----------*/

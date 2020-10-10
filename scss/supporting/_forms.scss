@@ -1,0 +1,38 @@
+/** SCSS Forms
+------------------------------------- */
+#gform_fields_4 {
+  #input_4_13 {
+    display: flex;
+    #input_4_13_3_container {
+      flex-basis: 50%;
+      input {
+        width: 95%;
+      }
+    }
+    #input_4_13_6_container {
+      flex-basis: 50%;
+      input {
+        width: 95%;
+      }
+    }
+  }
+}
+
+body.home #advanced-search-inner .gfield.gf_right_half, body.home #advanced-search-inner .gfield.gf_left_half {
+  display: inline-block;
+  width: 49%;
+}
+
+#field_4_10,
+#field_4_11,
+#field_4_8 {
+  width: 33%;
+  float: left;
+  margin: 0 auto;
+}
+#input_4_16 {
+  width: 100%;
+}
+#field_4_17 {
+  display: none;
+}

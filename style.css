@@ -1,0 +1,230 @@
+/*
+Theme Name:     Almost Home
+Theme URI:      http://tcwebsite.com
+Description:    Custom theme for Almost Home USA
+Author:         TC Website (Modified by Chris Parsons @ steelbridge.io)
+Author URI:     http://tcwebsite.com
+Template:       realestate-4
+Version:        2.1.0
+
+    = Front Page
+        - Modal
+
+*/
+
+@import url("../realestate-4/style.css");
+
+@import url("css/global.css");
+
+
+/** Front Paage
+=========================================================== */
+
+/*Modal*/
+#fp-request-quote-modal .modal-lg {
+
+}
+#fp-request-quote-modal .container {
+    width: 100%;
+}
+/* Testimonial */
+.testimonial-content-ahu{
+	position: relative;
+	background: #68a0ad;
+	padding: 12px;
+	color: #fff;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-style: italic;
+	line-height: 1.8em;
+}
+.testimonial-content-ahu blockquote p {
+	color: #fff;
+}
+.testimonial-content-ahu .testimonial-author { color: #ddd; }
+#right-sidebar .widget .testimonial-content-ahu li {
+	list-style-type: none;
+	margin-right: 10px;
+}
+#right-sidebar .widget .testimonial-content-ahu blockquote {
+	border-left: 0;
+	margin: 0;
+	padding: 0;
+}
+
+.testimonial-content-ahu p:last-child{ margin: 0 }
+#right-sidebar .widget ul.testimonial-content-ahu{ margin: 0; }
+
+.ahu_tag_line {
+	font-style: italic;
+	font-size: 18pt;
+	padding-bottom: 15px;
+  line-height: 1.8em;
+	clear: both;
+	display: block;
+	color: #015965;
+	font-family: "Lucida Handwriting", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+  padding-top: 1.618em;
+}
+
+.recent-news ul li {
+	clear: both;
+}
+
+p.location {
+    font-size: 11pt !important;
+}
+
+/* Home Form Style */
+.gform_body {
+    overflow: hidden;
+}
+body.home .gform_wrapper .top_label li.gfield.gf_middle_third {
+  margin-left: 0 !important;
+}
+
+/* Single Listing Request quote form */
+.quote-form .gform_wrapper .top_label li.gfield.gf_left_half input.medium, .quote-form .gform_wrapper .top_label li.gfield.gf_left_half input.large, .quote-form .gform_wrapper .top_label li.gfield.gf_left_half select.medium, .quote-form .gform_wrapper .top_label li.gfield.gf_left_half select.large, .quote-form .gform_wrapper .top_label li.gfield.gf_right_half input.medium, .quote-form .gform_wrapper .top_label li.gfield.gf_right_half input.large, .quote-form .gform_wrapper .top_label li.gfield.gf_right_half select.medium, .quote-form .gform_wrapper .top_label li.gfield.gf_right_half select.large {
+  font-size: 10px;
+}
+.quote-form .gform_wrapper .datepicker {
+  margin: 0 !important;
+  width: 94% !important;
+}
+
+#advanced-search-inner .gform_footer.top_label {
+    margin-top: 1rem;
+}
+
+/* Step-two forms */
+/* Step-two home fixed highlights */
+/*#input_20_9, #input_20_25, #input_20_17, #input_20_11, #input_20_12 {
+  background: none repeat scroll 0 0 #03899c;
+  color: #fff;
+}*/
+
+body {
+  background-attachment: fixed !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: cover !important;
+}
+body.page-template-request-second-step-php .gform_wrapper .top_label input.large, body.page-template-request-second-step-php .gform_wrapper .top_label select.large {
+  width: 98% !important;
+}
+body.page-template-request-second-step-php .gform_wrapper .top_label textarea.textarea {
+  width: 96% !important;
+}
+#input_20_11, #input_20_12, #input_21_11, #input_21_12 {
+  width: 98% !important;
+}
+#field_20_22, #field_21_22 {
+  float: left;
+}
+#input_20_22, #input_21_22 {
+  min-height: 0;
+  width: 96% !important;
+}
+body.page-template-request-second-step-php .gform_wrapper .top_label li.gfield.gf_left_half {
+  margin: 0 1% 8px;
+  width: 48%;
+}
+body.page-template-request-second-step-php .gform_wrapper .top_label li.gfield.gf_left_fourth.gf_first {
+  clear: both !important;
+}
+body.page-template-request-second-step-php .gform_wrapper .top_label li.gfield.gf_left_fourth {
+  clear: none !important;
+  margin-right: 2.6%;
+  width: 22%;
+}
+body.page-template-request-second-step-php .gform_wrapper .top_label li.gfield.gf_left_fourth_last {
+    width: 23%;
+}
+body.page-template-request-second-step-php .gform_wrapper .top_label textarea.textarea {
+  width: 97%;
+}
+
+@media (max-width: 934px) {
+
+#advanced-search-inner .gform_wrapper {
+  margin-left: 8%;
+}
+body.home #advanced-search-inner .gfield.gf_right_half, body.home #advanced-search-inner .gfield.gf_left_half {
+  width: 100% !important;
+}
+body.home #advanced-search-inner .gfield.gf_left_half {
+  margin: 0 !important;
+}
+body.home #advanced-search-inner .gfield.gf_right_half input, body.home #advanced-search-inner .gfield.gf_left_half input {
+  margin: 0 !important;
+  width: 93% !important;
+}
+
+/* Step two */
+body.page-template-request-second-step-php .gform_wrapper .top_label li.gfield.gf_left_half, body.page-template-request-second-step-php .gform_wrapper .top_label li.gfield.gf_right_half {
+  margin: 0 0 8px;
+  width: 98%;
+}
+body.page-template-request-second-step-php .gform_wrapper .top_label li.gfield.gf_left_fourth, body.page-template-request-second-step-php .gform_wrapper .top_label li.gfield.gf_left_fourth_last {
+  margin: 0 0 8px;
+  width: 98%;
+}
+
+.gform_wrapper .top_label li.gfield.gf_left_three, .gform_wrapper .top_label li.gfield.gf_right_three, .gform_wrapper .top_label li.gfield.gf_middle_three {
+  width: 98%;
+}
+
+}
+@media only screen and  (min-width : 768px) {
+  body #gform_wrapper_4 { position: relative; }
+  body #gform_wrapper_4 .gform_heading {margin-bottom: 0 !important;}
+  body #gform_wrapper_4 .top_label h3.gform_title {
+    margin: 0 0.50em 0  0.50em !important
+  }
+  body #gform_wrapper_4 .top_label div.ginput_container {margin-top: 0 !important;}
+  body #gform_wrapper_4 li.field_sublabel_below {margin-top: 6px !important;}
+  body #gform_wrapper_4 .gform_footer {
+    width: auto;
+    /*position: absolute;*/
+    top: 185px;
+    left: 340px;
+    padding: 0;
+    margin: 0;
+  }
+  /* Chrome, Torch, Opera */
+  body #gform_wrapper_4.gf_browser_chrome .gform_footer { top: 132px;  left: 340px }
+  /* Mozilla Firefox */
+  body #gform_wrapper_4.gf_browser_gecko .gform_footer { top: 140px; left: 328px }
+  /* Safari */
+  body #gform_wrapper_4.gf_browser_safari .gform_footer { top: 137px; left: 324px }
+  /* I.E. */
+  body #gform_wrapper_4.gf_browser_ie .gform_footer { top: 138px; left: 325px }
+  /* Microsoft Edge */
+  @supports (-ms-ime-align:auto) { body #gform_wrapper_4 .gform_footer { top: 138px; left: 327px } }
+
+@media only screen and (min-width : 320px) and (max-width : 767px) {
+  #gform_wrapper_4 .gform_heading {
+    margin-bottom: 0 !important;
+    margin-top: 0;
+  }
+  #gform_wrapper_4 ul.left_label li.gfield .gfield_password_strength, .gform_wrapper ul.right_label li.gfield .gfield_password_strength {
+    margin-top: .15em;
+    margin-bottom: .15em;
+    width: 62%;
+ }
+ /* adjust these as needed for mobile */
+ body #right-sidebar ul.nearby-properties {
+  margin-left: 0;}
+ body #right-sidebar ul.nearby-properties li {
+   list-style-type: none;
+   overflow: hidden;
+   border-bottom: 5px solid #fff;
+   padding: 10px;
+   background: #eee;
+ }
+ body #right-sidebar ul.nearby-properties li:last-child {border-bottom: 0; }
+ body #right-sidebar ul.nearby-properties li img.alignleft {margin: 0 10px 0 0; }
+}
+}

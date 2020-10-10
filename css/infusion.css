@@ -1,0 +1,267 @@
+.beta-base .preheader, .beta-base .header, .beta-base .body, .beta-base .sidebar, .beta-base .leftSidebar, .beta-base .rightSidebar, .beta-base .footer {
+    margin: 0;
+    padding: 0;
+    border: none;
+    white-space: normal;
+    line-height: normal;
+}
+.beta-base .title, .beta-base .subtitle, .beta-base .text, .beta-base img {
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: none;
+    white-space: normal;
+    line-height: normal;
+}
+.beta-base .bodyContainer td.preheader{
+    padding: 10px 0;
+}
+.beta-base .bodyContainer td.header {
+    padding: 0;
+    height: 30px;
+}
+.beta-base .bodyContainer td.body, .beta-base .bodyContainer td.footer,
+.beta-base .bodyContainer td.sidebar, .beta-base .bodyContainer td.leftSidebar, .beta-base .bodyContainer td.rightSidebar {
+    padding: 20px;
+}
+.beta-base .bodyContainer td.header p, .beta-base .bodyContainer td.preheader p, .beta-base .bodyContainer td.body p,
+.beta-base .bodyContainer td.footer p, .beta-base .bodyContainer td.sidebar p,
+.beta-base .bodyContainer td.leftSidebar p, .beta-base .bodyContainer td.rightSidebar p {
+    margin: 0;
+    color: inherit;
+}
+.beta-base .bodyContainer td.header div.title, .beta-base .bodyContainer td.preheader div.title, .beta-base .bodyContainer td.body div.title,
+.beta-base .bodyContainer td.footer div.title, .beta-base .bodyContainer td.sidebar div.title,
+.beta-base .bodyContainer td.leftSidebar div.title, .beta-base .bodyContainer td.rightSidebar div.title,
+.beta-base .bodyContainer td.header div.subtitle, .beta-base .bodyContainer td.preheader div.subtitle, .beta-base .bodyContainer td.body div.subtitle,
+.beta-base .bodyContainer td.footer div.subtitle, .beta-base .bodyContainer td.sidebar div.subtitle,
+.beta-base .bodyContainer td.leftSidebar div.subtitle, .beta-base .bodyContainer td.rightSidebar div.subtitle,
+.beta-base .bodyContainer td.header div.text, .beta-base .bodyContainer td.preheader div.text, .beta-base .bodyContainer td.body div.text,
+.beta-base .bodyContainer td.footer div.text, .beta-base .bodyContainer td.sidebar div.text,
+.beta-base .bodyContainer td.leftSidebar div.text, .beta-base .bodyContainer td.rightSidebar div.text {
+    overflow: auto;
+}
+.beta-base .optout {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+div.infusion-captcha {
+    width: 220px;
+    padding: 10px;
+}
+div.infusion-captcha input, div.infusion-captcha select, div.infusion-captcha textarea {
+    width: 95%;
+    display: inline-block;
+    vertical-align: middle;
+}
+table.infusion-field-container td.infusion-field-input-container input[type='text'],
+table.infusion-field-container td.infusion-field-input-container input[type='password'],
+table.infusion-field-container td.infusion-field-input-container textarea {
+    width: 98%; /* must be 98% to make the snippet-menu line up due to border width */
+    margin: 0;
+}
+table.infusion-field-container td.infusion-field-input-container select {
+    width: 101%;
+    *width: 102%; /* this one for IE */
+    margin: 0;
+}
+table.infusion-field-container td.infusion-field-label-container {
+    padding-right: 5px
+}
+td.header .image-snippet img {
+    vertical-align: bottom;
+}
+#webformErrors {
+    color: #990000;
+    font-size: 14px;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+select {
+	font-size: 15px;
+	color: #B7B7B7;
+	font-family: inherit;
+	padding: 5px 0 5px 0;
+	letter-spacing: normal;
+}
+input {
+  width: 140px;
+  height: 100%;
+}
+select option {
+	padding: 3px 3px;
+	display: block;
+}
+.infusion-option {
+    display: block;
+    text-align: left;
+}
+.beta-font-b h1, .beta-font-b h2, .beta-font-b h3, .beta-font-b h4, .beta-font-b h5, .beta-font-b h6 {
+    font-family: arial,sans-serif;
+}
+.beta-font-b h1 {font-size: 24px;}
+.beta-font-b h2 {font-size: 20px;}
+.beta-font-b h3 {font-size: 14px;}
+.beta-font-b h4 {font-size: 12px;}
+.beta-font-b h5 {font-size: 10px;}
+.beta-font-b h6 {font-size: 8px;}
+.beta-font-b address {font-style: italic;}
+.beta-font-b pre {font-family: Courier New, monospace;}
+.beta-font-b .title, .beta-font-b .title p {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: arial,sans-serif;
+}
+.beta-font-b .subtitle, .beta-font-b .subtitle p {
+    font-size: 11px;
+    font-weight: normal;
+    font-family: arial,sans-serif;
+}
+.beta-font-b .text, .beta-font-b p {
+    font-size: 12px;
+    font-family: arial,sans-serif;
+}
+.beta-font-b .preheader .text, .beta-font-b .preheader .text p {
+    font-size: 11px;
+    font-family: arial,sans-serif;
+}
+.beta-font-b .footer a {
+    font-size: 11px;
+    font-family: arial,sans-serif;
+}
+.beta-font-b .footer .text {
+    font-size: 10px;
+    font-family: verdana,sans-serif;
+}
+.beta-font-b .sidebar .title, .beta-font-b .leftSidebar .title, .beta-font-b .rightSidebar .title {
+    font-size: 15px;
+    font-weight: bold;
+    font-family: arial,sans-serif;
+}
+.beta-font-b .sidebar .subtitle, .beta-font-b .leftSidebar .subtitle, .beta-font-b .rightSidebar .subtitle {
+    font-size: 12px;
+    font-family: arial, sans-serif;
+}
+.beta-font-b .sidebar .text, .beta-font-b .sidebar .text p, .beta-font-b .leftSidebar .text, .beta-font-b .rightSidebar .text {
+    font-size: 11px;
+    font-family: arial, sans-serif;
+}
+.infusion-field-label-container {
+    font-size: 14px;
+    font-family: arial,sans-serif;
+	font-weight: bold;
+}
+.infusion-field-input-container {
+    color: #000000;
+    font-size: 12px;
+	height:26px;
+	width: 134px;
+}
+.infusion-option label {
+    color: #000000;
+    font-size: 14px;
+    font-family: arial,sans-serif;
+}
+.default a {
+    color: #F15C25;
+}
+.default .text {
+    color: #787878;
+}
+.default .background .preheader a {
+    color: #2A2928;
+}
+.default .background .preheader .text {
+    color: #2A2928;
+}
+.default .header {
+    background-color: #FFFFFF;
+}
+.default .title {
+    color: #669940;
+}
+.default .subtitle {
+    color: #F15C25;
+}
+.default .sidebar .title {
+    color: #F15C25;
+}
+.default .leftSidebar .title {
+    color: #F15C25;
+}
+.default .rightSidebar .title {
+    color: #F15C25;
+}
+.default .sidebar .subtitle {
+    color: #669940;
+}
+.default .leftSidebar .subtitle {
+    color: #669940;
+}
+.default .rightSidebar .subtitle {
+    color: #669940;
+}
+.default .footer {
+    background-color: #7AC143;
+}
+.default .footer a {
+    color: #00728F;
+}
+.default .footer .text {
+    color: #2A2928;
+}
+.default .infusion-field-label-container {
+	color: #B7B7B7;
+	color: #FFDFE0;
+	color: #DCDEE0;
+    font-size: 14px;
+    font-family: arial,sans-serif;
+}
+.default .infusion-field-input-container {
+    color: #000000;
+    font-size: 12px;
+}
+.default .infusion-option label {
+    font-size: 14px;
+    color: #000000;
+    font-family: arial,sans-serif;
+}
+.infusion-field-label-container {
+text-align:Left;
+}
+.infusion-field-label-container {
+vertical-align:Middle;
+}
+.infusion-field-input-container {
+width:200px;
+}
+.infusion-submit {
+    -moz-box-shadow: inset 0px 1px 0px 0px #fff6af;
+    -webkit-box-shadow: inset 0px 1px 0px 0px #fff6af;
+    box-shadow: inset 0px 1px 0px 0px #fff6af;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffec64), color-stop(1, #ffab23));
+    background: -moz-linear-gradient(center top, #ffec64 5%, #ffab23 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffec64', endColorstr='#ffab23');
+    background-color: #ffec64;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    border: 1px solid #ffaa22;
+    display: block;
+    color: #333333;
+    font-family: arial;
+    font-weight: bold;
+    padding: 6px 24px;
+    text-decoration: none;
+    text-shadow: 1px 1px 0px #ffee66;
+    margin: 0 auto;
+    height: 33px;
+    width: 166px; 
+}
+
+
+.hidden { display: none; }
+.unhidden { display: block; }

@@ -1,0 +1,120 @@
+/* Gutenberg Updated CSS */
+
+/* Blockquote
+--------------------------------------------- */
+
+blockquote,
+blockquote.wp-block-quote {
+	background: transparent;
+	text-align: left;
+
+	p {
+		font-size: 24px;
+		font-style: normal;
+		font-weight: 400;
+	}
+
+	cite,
+	.wp-block-quote__citation {
+		display: block;
+		font-size: 16px;
+		font-weight: 700;
+		margin-top: 12px;
+		text-transform: uppercase;
+	}
+
+    p:last-of-type {
+        margin-bottom: 0;
+    }
+
+	&.is-large,
+	&.is-style-large {
+		margin: calc( 2 * $block-margin ) auto;
+
+		p {
+			@include font-sizes( 24px, 36px );
+		}
+	}
+
+}
+
+
+/* Separator
+--------------------------------------------- */
+
+.wp-block-separator,
+hr {
+
+	&:not(.is-style-dots) {
+		background-color: $border-color;
+		border: 0;
+		height: 1px;
+	}
+
+	&:not(.is-style-wide):not(.is-style-dots) {
+		width: 100%;
+		height: 4px;
+		background: transparent;
+
+		&::before {
+			content: '';
+			display: block;
+			height: 4px;
+			width: 40px;
+			background: $highlight;
+		}
+	}
+
+	&.is-style-dots:before {
+		color: $grey_9;
+		font-size: 18px;
+		letter-spacing: 12px;
+		padding-left: 12px;
+	}
+}
+
+/* Button
+--------------------------------------------- */
+
+.wp-block-button {
+
+	.wp-block-button__link {
+		border-radius: 0;
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 18px;
+		padding: 20px 24px;
+
+		&:hover {
+			background: darken( $highlight, 10% );
+			text-decoration: none;
+		}
+
+	}
+}
+
+/* Pull Quote
+--------------------------------------------- */
+
+.wp-block-pullquote {
+	border: none;
+	padding: 0;
+
+	blockquote {
+		border-left: 0;
+		border-top: 8px solid $highlight;
+		border-bottom: 8px solid $highlight;
+		padding: 16px 0;
+		text-align: center;
+		max-width: 50%;
+		margin: 0 auto;
+	}
+
+	&.alignleft,
+	&.alignright {
+
+		blockquote {
+			max-width: 100%;
+		}
+	}
+}
