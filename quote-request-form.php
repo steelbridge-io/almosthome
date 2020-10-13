@@ -32,17 +32,17 @@
 
       <input name='input_4' id='input_4_4' type='text' value='' class='datepicker medium mdy datepicker_no_icon' tabindex='4' />
 
-      <input type='hidden' id='gforms_calendar_icon_input_4_4' class='gform_hidden' value='http://www.almosthomeusa.com/wp-content/plugins/gravityforms/images/calendar.png'/></td>
+      <input type='hidden' id='gforms_calendar_icon_input_4_4' class='gform_hidden' value='https://www.almosthomeusa.com/wp-content/plugins/gravityforms/images/calendar.png'/></td>
 
       <td><label class='gfield_label' >End Date</label>
 
       <input name='input_7' id='input_4_7' type='text' value='' class='datepicker medium mdy datepicker_no_icon' tabindex='5' />
 
-      <input type='hidden' id='gforms_calendar_icon_input_4_7' class='gform_hidden' value='http://www.almosthomeusa.com/wp-content/plugins/gravityforms/images/calendar.png'/></td>
+      <input type='hidden' id='gforms_calendar_icon_input_4_7' class='gform_hidden' value='https://www.almosthomeusa.com/wp-content/plugins/gravityforms/images/calendar.png'/></td>
 
       <td><input type='submit' id='gform_submit_button_4' class='gform_button button' value='Request A Quote' tabindex='6' onclick='if(window["gf_submitting_4"]){return false;}  window["gf_submitting_4"]=true;  ' /></td>
 
-  </table> 
+  </table>
 
   <input type='hidden' class='gform_hidden' name='is_submit_4' value='1' />
 
@@ -56,11 +56,11 @@
 
   <input type='hidden' class='gform_hidden' name='gform_source_page_number_4' id='gform_source_page_number_4' value='1' />
 
-  <input type='hidden' name='gform_field_values' value='' />          
+  <input type='hidden' name='gform_field_values' value='' />
 
   </form>
 
-  </div>  
+  </div>
 
   <script type='text/javascript'> if(typeof gf_global == 'undefined') var gf_global = {"gf_currency_config":{"name":"U.S. Dollar","symbol_left":"$","symbol_right":"","symbol_padding":"","thousand_separator":",","decimal_separator":".","decimals":2},"base_url":"http:\/\/www.almosthomeusa.com\/wp-content\/plugins\/gravityforms","number_formats":[],"spinnerUrl":"http:\/\/www.almosthomeusa.com\/wp-content\/plugins\/gravityforms\/images\/spinner.gif"};jQuery(document).bind('gform_post_render', function(event, formId, currentPage){if(formId == 4) {} } );jQuery(document).bind('gform_post_conditional_logic', function(event, formId, fields, isInit){} );</script><script type='text/javascript'> jQuery(document).ready(function(){jQuery(document).trigger('gform_post_render', [4, 1]) } ); </script>
 
@@ -128,7 +128,7 @@
 
   <div class='gform_footer top_label'>
 
-  <input type='submit' id='gform_submit_button_4' class='gform_button button' value='Request A Quote' tabindex='6' onclick='if(window["gf_submitting_4"]){return false;}  window["gf_submitting_4"]=true;  ' /> 
+  <input type='submit' id='gform_submit_button_4' class='gform_button button' value='Request A Quote' tabindex='6' onclick='if(window["gf_submitting_4"]){return false;}  window["gf_submitting_4"]=true;  ' />
 
   <input type='hidden' class='gform_hidden' name='is_submit_4' value='1' />
 
@@ -142,7 +142,7 @@
 
   <input type='hidden' class='gform_hidden' name='gform_source_page_number_4' id='gform_source_page_number_4' value='1' />
 
-  <input type='hidden' name='gform_field_values' value='' />          
+  <input type='hidden' name='gform_field_values' value='' />
 
   </div>
 

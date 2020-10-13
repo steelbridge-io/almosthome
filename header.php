@@ -86,46 +86,62 @@ if(preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|c
   
   <?php if ( is_home() || is_page_template('page-city.php') ) { ?>
 
-    <div class="front-page-cta-top">
-      <a class="ah-button front-page-cta-top-btn" href="<?php echo home_url(); ?>/featured-listings/">List Your Quality<br /> Property With Us</a>
-    </div>
+    <!--<div class="front-page-cta-top">
+      <a class="ah-button front-page-cta-top-btn" href="<?php// echo home_url(); ?>/featured-listings/">List Your Quality<br /> Property With Us</a>
+    </div> -->
 
     <?php } ?>
     
-    <header class="sixteen columns">
-        <div class="logo-wrap">
+    <!-- <header class="sixteen columns"> -->
+    <header class="container-fluid">
+      <div class="row">
+        <div class="logo-wrap col-md-12">
           <a href="<?php echo home_url(); ?>">
             <img id="logo" class="marT40" src="<?php echo $ct_options['ct_logo']; ?>" alt="<?php bloginfo('name'); ?>" />
           </a>
         </div>
-
-        <div class="header-info-wrap">
-          <p class="telephone">Call Toll Free <a class="tel-num" href="18667439031" title="tel number">866-743-9031</a></p>
-          <?php ct_nav(); ?>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="header-info-wrap">
+            <!--<p class="telephone">Call Toll Free <a class="tel-num" href="18667439031" title="tel number">866-743-9031</a></p>-->
+            <?php ct_nav(); ?>
+          </div>
         </div>
+      </div>
     </header>
 
     <?php if ( is_home() ) { ?>
 
-    <div class="inner container">
-      <div class="four columns offset-by-one">
+    <div id="fp-top-inner-container" class="inner container">
+      <div class="row">
+        <div class="col-md-6">
+        
+        <div class="home-city-search">
+        <?php include 'city-search.php'; ?>
+        </div>
+        
+        </div>
       
-      <div class="home-city-search">
-      <?php include 'city-search.php'; ?>
+        <div class="col-md-6">
+  
+          <div class="col-md-6">
+            <p class="telephone">Call Toll Free<br> <a class="tel-num" href="18667439031" title="tel number">866-743-9031</a></p>
+            <?php //ct_nav(); ?>
+          </div>
+        
+          <div id="fp-request-quote" class="request-a-quote col-md-6">
+            <button type="button" class="ah-button btn btn-primary" data-toggle="modal" data-target=".fp-request-quote-modal">Request A Quote</button>
+            <?php //echo do_shortcode('[gravityform id="4" name="Request A Quote" title="true" description="false"]'); ?><!-- ?php include 'quote-request-form.php'; ? -->
+          </div>
+          
+          <div class="col-md-12 list-with-us">
+            <a class="ah-button front-page-cta-top-btn" href="<?php echo home_url(); ?>/featured-listings/">List Your Quality<br /> Property With Us</a>
+          </div>
+          
+        </div>
       </div>
-
-      </div>
-      
-    <div class="ten columns offset-by-one">
-    
-      <div id="advanced-search-inner" class="quote-form">
-      
-      <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".fp-request-quote-modal">Request A Quote</button>
-      <?php //echo do_shortcode('[gravityform id="4" name="Request A Quote" title="true" description="false"]'); ?><!-- ?php include 'quote-request-form.php'; ? -->
-     </div>
-     
     </div>
-  </div>
 
   <?php } ?>
   </div>

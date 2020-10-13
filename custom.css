@@ -47,4 +47,36 @@ body.home #advanced-search-inner .gfield.gf_right_half, body.home #advanced-sear
   border: none;
 }
 
+/** SCSS Front Page Containers
+
+  - Front Page
+---------------------------------------------- */
+/* Front Page */
+#front-page-inner-container row {
+  display: flex;
+  align-items: center;
+}
+
+.telephone {
+  width: 100%;
+  text-align: center;
+}
+
+#fp-request-quote.request-a-quote button.ah-button {
+  padding: 1em 2em;
+  width: 100%;
+  margin-top: 0.3em;
+}
+
+.header-info-wrap {
+  width: 100%;
+}
+.header-info-wrap nav {
+  width: 100%;
+}
+
+.list-with-us a {
+  width: 100%;
+}
+
 /*# sourceMappingURL=custom.css.map */

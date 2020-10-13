@@ -1,4 +1,9 @@
-<form name="city-search" method="post" action="<?php echo home_url(); ?>/city-redirect">
+<?php
+echo '<p><span>Find properties for your city of interest</span></p>';
+echo do_shortcode('[ivory-search id="10018" title="Default Search Form"]');
+echo '<p style="margin-top: 1em;"><span>Or search a state</span></p>';
+?>
+<!--<form name="city-search" method="post" action="<?php// echo home_url(); ?>/city-redirect">
 <p>
 	<span>Find properties for your city</span>
 	<select name='state' id="state">
@@ -6,8 +11,8 @@
 	</select>
 
 	<select name='city' id="city">
-		
+	
 	</select>
 
 	<input type="submit" class="button" value="Search Site">
-</form>
+</form>-->
